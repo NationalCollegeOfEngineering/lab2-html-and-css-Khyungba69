@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://w1.pngwing.com/pngs/843/739/png-transparent-manchester-united-logo-liverpool-fc-premier-league-anfield-fa-cup-efl-cup-football-manchester-united-fc-thumbnail.png"
+      type="image/x-icon"
+    />
+    <!-- for apple link-touch -->
+    <link
+      rel="apple-touch-icon"
+      href="https://w1.pngwing.com/pngs/843/739/png-transparent-manchester-united-logo-liverpool-fc-premier-league-anfield-fa-cup-efl-cup-football-manchester-united-fc-thumbnail.png"
+    />
+  </head>
+  <body>
+    <form autocomplete="off">
+      <fieldset>
+        <legend>Fill out the fields</legend>
+        <label for="fname">FirstName</label>
+        <br />
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="Your Firsttname"
+          autofocus
+          required
+        />
+        <br />
+        <label for="lname">LastName</label>
+        <br />
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="Your LastName"
+          required
+        />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label>Gender</label>
+        <br />
+        <input type="radio" name="gender" value="male" />Male
+        <br />
+
+        <input type="radio" name="gender" value="female" />Female
+
+        <br />
+        <input type="radio" name="gender" value="other" />Others
+        <br />
+
+        <label for="dob">Date of Birth</label>
+        <br />
+        <input type="date" name="dob" id="dob" />
+        <br />
+
+        <label for="subject">Select any two</label>
+        <br />
+        <input type="checkbox" name="subject" value="web" />web
+        <br />
+        <input type="checkbox" name="subject" value="networking" />networking
+        <br />
+        <input type="checkbox" name="subject" value="graphics" />graphics
+        <br />
+        <input type="checkbox" name="subject" value="python" />python
+        <br />
+
+        <label for="district" id="district">Districts</label>
+        <br />
+        <select name="district" id="district">
+          <option value="Kathmandu">kathmandu</option>
+          <option value="Kathmandu">Ramechhap</option>
+          <option value="Kathmandu">Lalitpur</option>
+          <option value="Kathmandu">Bhaktapur</option>
+          <option value="Kathmandu">Kaski</option>
+          <option value="Kathmandu">Ilam</option>
+        </select>
+
+        <br />
+        <label for="zip">Zip</label>
+        <br />
+        <input type="number" name="zip" id="zip" min="1" />
+        <br />
+
+        <label for="upload">Image Upload</label>
+        <br />
+        <input
+          type="file"
+          name="upload"
+          id="upload"
+          multiple
+          accept="image/*"
+        />
+        <br />
+
+        <label for="msg">Message</label>
+        <br />
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <br />
+
+        <input type="hidden" name="user" value="user" />
+        <br />
+        <label for="pwd">Password</label>
+        <br />
+        <input type="password" name="pwd" id="pwd" required />
+        <br />
+        <label for="search">Search</label>
+        <br />
+        <input type="search" name="search" id="search" disabled />
+        <br />
+
+        <input type="submit" value="submit" />
+        <br />
+
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
